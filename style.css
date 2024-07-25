@@ -3,6 +3,8 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -14,43 +16,54 @@ img {
     width: 160px;
 }
 
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7E8;
+}
+
 .header, .info, .quote, .cta, .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: inherit;
 }
 
 .header {
     min-height: 320px;
+    padding: 32px;
     flex: 1 1 auto;
+    justify-content: flex-start;
     gap: 64px;
-    background-color: red;
+    background-color: #1F2937;
 }
 
 .info {
     min-height: 320px;
     flex: 1 1 auto;
     gap: 32px;
-    background-color: yellow;
+    background-color: white;
 }
 
 .quote {
     min-height: 320px;
     flex: 1 1 auto;
-    background-color: greenyellow;
+    background-color: #E5E7E8;
 }
 
 .cta {
     min-height: 200px;
     flex: 1 1 auto;
-    background-color: blue;
+    background-color: white;
 }
 
 .footer {
     min-height: 60px;
+    font-size: 18px;
     flex: 1 1 auto;
-    background-color: blueviolet;
+    background-color: #1F2937;
+    color: #E5E7E8;
 }
 
 .header .top,
@@ -59,6 +72,48 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.header .top .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.header .top .links {
+    display: flex;
+    gap: 24px;
+}
+
+.header .hero .text {
+    font-size: 48px;
+    font-weight:900;
+    color: #F9FAF8;
+}
+
+.header .hero .subtext {
+    font-size: 18px;
+    color: #E5E7E8;
+}
+
+.header .hero button {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 12px;
+    border: none;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+}
+
+.info .title {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 800;
 }
 
 .info .content {
@@ -74,19 +129,62 @@ img {
     align-items: center;
 }
 
+.info img {
+    border: 2px solid #3882F6;
+    border-radius: 12px;
+}
+
 .quote .text,
 .quote .author {
+    color: #1F2937;
     width: 480px;
     flex: 0 1 auto;
 }
 
+.quote .text {
+    font-size: 36px;
+    font-weight: 200; /*doesn't work?*/
+    font-style: italic;
+}
+
 .quote .author {
+    color: #1F2937;
+    font-size: 30px;
+    font-weight: 800;
     text-align: right;
 }
 
 .cta .pop {
+    width: 800px;
+    padding: 48px 100px;
+    border-radius: 8px;
+    background-color: #3882F6;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 120px;
+    justify-content: center;
+    gap: 360px;
+}
+
+.cta .text {
+    color: #E5E7E8;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.cta .subtext {
+    color: #E5E7E8;
+    font-size: 18px;
+}
+
+.cta button {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 12px;
+    border: 2px solid #F9FAF8;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
 }
