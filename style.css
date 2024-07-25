@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body {
+    margin: 0%;
+}
+
+img {
+    height: auto;
+    width: 160px;
+}
+
+.header, .info, .quote, .cta, .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    min-height: 320px;
+    flex: 1 1 auto;
+    gap: 64px;
+    background-color: red;
+}
+
+.info {
+    min-height: 320px;
+    flex: 1 1 auto;
+    gap: 32px;
+    background-color: yellow;
+}
+
+.quote {
+    min-height: 320px;
+    flex: 1 1 auto;
+    background-color: greenyellow;
+}
+
+.cta {
+    min-height: 200px;
+    flex: 1 1 auto;
+    background-color: blue;
+}
+
+.footer {
+    min-height: 60px;
+    flex: 1 1 auto;
+    background-color: blueviolet;
+}
+
+.header .top,
+.header .hero {
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+}
+
+.info .content .piece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote .text,
+.quote .author {
+    width: 480px;
+    flex: 0 1 auto;
+}
+
+.quote .author {
+    text-align: right;
+}
+
+.cta .pop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 120px;
+}
